@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate - Nurture Nest Foundation</title>
+        <link rel="shortcut icon" href="./images/narture-nest-favicon.png" type="image/x-icon">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .nav-item {
+        transition: all 0.5s ease;
+        height: 8vmin;
+        border-radius: 10px;
+        margin: 2vmin 0vmin 2vmin 0vmin;
+      }
+      .hov:hover {
+        background-color: yellow;
+        color: white;
+      }
+      .caption-shadow {
+        filter: drop-shadow(5px 5px 2px rgb(0, 0, 0));
+        font-weight: bold;
+      }
+      .carousel-item a {
+        padding: 1vmin 4vmin;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .carousel-item h1 {
+        font-size: 3.2rem;
+      }
+
+      .services {
+        box-shadow: 2px 2px 10px black;
+        transition: all 0.5s ease;
+      }
+      .services:hover {
+        box-shadow: 4px 4px 5px black;
+        transform: translateY(-8px);
+      }
+       .logo {
+        width: 50%;
+      }
+
+      @media (max-width:769px) {
+        .logo {
+          width: 150%;
+        }
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row  bg-white text-dark border-bottom border-1 p-2">
+        <div class="col-sm-12 p-0 d-flex justify-content-center  fs-6">
+          <marquee class="h-100 m-0 p-0">"Empowering Communities, Building a Better Future."</marquee>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <div class="row sticky-top bg-white d-flex justify-content-center">
+        <div class="col-sm-10 p-0 px-5">
+          <nav class="navbar p-0 navbar-expand-lg navbar-light">
+            <a class="navbar-brand w-50 m-0 p-0" href="#"
+              ><img class="logo" src="./images/nurture-nest-logo.png" height="100" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse p-0"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mx-auto m-0 gap-sm-5">
+                <li class="nav-item hov h-100 fs-5 fw-bold active">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+
+                <li class="nav-item hov h-100 fs-5 fw-bold active">
+                  <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item hov h-100 fs-5 fw-bold active">
+                  <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
+             
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <!-- donation details open -->
+
+      <div class="row p-sm-5 my-sm-5 mb-sm-1">
+        <div class="col-sm-6 overflow-hidden p-sm-5 px-sm-2 overflow-hidden">
+          <img class="rounded-5 w-100 bg-danger" src="./images/carousel-1.jpg" alt="" />
+        </div>
+        <div class="col-sm-6 p-sm-5 overflow-hidden">
+          <div
+            class=" d-flex justify-content-center flex-column align-items-center gap-4 flex-wrap h-100 w-100"
+            style="background: rgb(245, 235, 235);"
+          >
+            <h2 class="fw-bold text-center fs-1">I Pledge to</h2>
+            <h2 class="text-center fs-2 fw-bold w-25 btn btn-danger">Give</h2>
+            <h2 class="fw-bold text-center">An Amount Of INR</h2>
+            <p class="w-100 text-center">
+              <a
+                href="#donation-form"
+                class="btn px-sm-5 py-2 mx-sm-2 fw-bold fs-5 btn-outline-danger"
+                ><i class="fa-solid m-0 fa-indian-rupee-sign"></i>1000</a
+              >
+              <a
+                href="#donation-form"
+                class="btn px-sm-5 py-2 mx-sm-2 fw-bold fs-5 btn-outline-danger"
+                ><i class="fa-solid m-0 fa-indian-rupee-sign"></i>1500</a
+              >
+            </p>
+            <p class="w-100 text-center">
+              <a
+                href="#donation-form"
+                class="btn px-sm-5 py-sm-2 mx-sm-2 fw-bold fs-5 btn-outline-danger"
+                ><i class="fa-solid m-0 fa-indian-rupee-sign"></i>2000</a
+              >
+              <a
+                href="#donation-form"
+                class="btn px-sm-5 py-sm-2 mx-sm-2 fw-bold fs-5 btn-outline-danger"
+                ><i class="fa-solid m-0 fa-indian-rupee-sign"></i>2500</a
+              >
+            </p>
+            <p
+              class="bg-secondary p-2 w-75 text-white fw-bold text-center fs-5"
+            >
+              Can help provide continuous education support to one child
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- donation details close -->
+
+
+      <!-- donate details open -->
+       <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+       </div>
+      <!-- donate details close -->
+
+
+      <!-- donation reasons open -->
+       <div class="row bg-dark text-white d-flex justify-content-center">
+        <div class="col-sm-10">
+            <h1 class="fw-bold text-center my-5" >Give Every Child a Chance to Learn and Dream</h1>
+            <p class="text-justify fs-4 mb-5">
+              Education is every child's right — it’s the foundation for a secure, dignified, and fulfilling life. But for countless children in India, this simple dream remains out of reach. Poverty, lack of awareness, and social inequalities often force children out of classrooms and into child labour, early marriages, or other unsafe situations.
+            </p>
+            <p class="text-justify fs-4 mb-5">
+              At Smile Foundation, we believe that no child should have to choose between survival and school. Through our ‘Shiksha Na Ruke’ initiative, we are making sure that learning never stops, even in the toughest of times. Currently, we are empowering more than 160,000 children across 27 states, helping them step confidently into a future full of hope and opportunities.
+            </p>
+        </div>
+       </div>
+      <!-- donation reasons close -->
+
+      <section id="donation-form">
+
+        <!-- donation form open -->
+        <div class="row d-flex p-sm-5 pb-sm-2 pt-0 justify-content-center">
+          <div class="col-sm-10 px-sm-5 pb-sm-5 pt-0">
+            <h2
+              class="text-center text-danger w-50 mx-5 fs-1 fw-bold position-relative"
+              style="bottom: -2rem; background-color: white"
+            >
+              Kindly Fill your Details
+            </h2>
+            <form
+
+              action="./payment.html"
+              class="p-5 rounded-5 mt-0 mb-5 "
+              style="border: 1px solid rgb(96, 97, 96)"
+            >
+              <label for="" class="form-control fs-5 mb-0 border-0">Name : </label>
+              <input
+                type="text"
+                placeholder="Enter Your Good Name *"
+                class="form-control py-2"
+                required
+              />
+              <label for="" class="form-control fs-5 mb-0 border-0">Designation : </label>
+              <input
+                type="text"
+                placeholder="Enter Your Designation *"
+                class="form-control py-2"
+                required
+              />
+              <label for="" class="form-control fs-5 mb-0 border-0"
+                >Field of Donation :
+              </label>
+              <div class="input-group mb-0">
+               
+                <select class="form-control form-control" id="inputGroupSelect01" style="height: 2.8rem;">
+                  <option selected>Choose...</option>
+                  <option value="1">Food</option>
+                  <option value="2">Clothing</option>
+                  <option value="3">Education</option>
+                </select>
+              </div>
+              <label for="" class="form-control fs-5 mb-0 border-0">Amount : </label>
+              <input
+                type="number"
+                placeholder="Enter the amount you want to donate *"
+                class="form-control py-2"
+                required
+              />
+              <label for="" class="form-control fs-5 mb-0 border-0">Address : </label>
+              <input
+                type="text"
+                placeholder="Enter Your Address"
+                class="form-control py-3"
+               
+              />
+
+              <div class="d-flex justify-content-center">
+
+                <button type="submit" class="btn btn-success fw-bold mt-3 fs-3">Pay</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- donation form close -->
+      </section>
+
+      <!-- footer open -->
+     <div class="row bg-dark overflow-hidden  gap-3 text-white d-flex justify-content-center">
+        <div class="col-sm-3 py-5">
+          <h2 class="text-warning mb-4 fw-bold">DONATION</h2>
+          <p class="m-0 fw-bold">Education & Child Development</p>
+          <p>Help a child build a brighter future through education.</p>
+          <a href="./donate.html" class=" text-decoration-none">Donate Now</a>
+          <hr />
+
+          <p class="m-0">Clothing & Essential Goods</p>
+          <p>Your contributions provide comfort and dignity to those in need.</p>
+          <a href="./donate.html" class=" text-decoration-none">Donate Now</a>
+          <hr />
+
+          <p class="m-0">Food Security & Community Support</p>
+          <p>Help us ensure no one in our community goes hungry.</p>
+          <a href="./donate.html" class=" text-decoration-none">Donate Now </a>
+        </div>
+        <div class="col-sm-3 py-5">
+          <h2 class="text-warning mb-4 fw-bold">NEWSLETTER</h2>
+          <p class="m-0">Stay updated on our latest initiatives, success stories, and upcoming events. Subscribe to our newsletter to see your impact and learn how you can get more involved with the Nurture Nest Foundation.
+          </p>
+         
+          <hr class="m-1 p-0"/>
+          
+          
+          <input type="text" name="" id="" class="form-control my-3" placeholder="Subscribe To Our Newsletter">
+          <p class="w-100 d-flex justify-content-end">
+
+              <a href="#" class="btn btn-primary text-white">SUBSCRIBE</a>
+          </p>
+        </div>
+        <div class="col-sm-3 py-5">
+          <h2 class="text-warning mb-4 fw-bold">RECENT CAMP</h2>
+            <div class="d-flex gap-sm-2">
+
+                <img src="./images/camp-img.avif" style="height: 10vmin; width: 10vmin;" alt="">   
+              <span>
+                <p class="m-0">Community Health Clinic</p>
+                <a href="#" class="text-decoration-none">www.camp1.com </a>
+                <p>2 weeks ago</p>
+              </span>
+            </div>
+         
+          <hr />
+          <div class="d-flex gap-sm-2">
+
+                <img src="./images/camp-img.avif" style="height: 10vmin; width: 10vmin;" alt="">   
+              <span>
+                <p class="m-0">Book Distribution Drive</p>
+                <a href="#" class="text-decoration-none">www.camp2.com </a>
+                <p>5 weeks ago</p>
+              </span>
+            </div>
+          <hr />
+           <div class="d-flex gap-sm-2">
+
+                <img src="./images/camp-img.avif" style="height: 10vmin; width: 10vmin;" alt="">   
+              <span>
+                <p class="m-0">Winter Clothing Drive
+</p>
+                <a href="#" class="text-decoration-none">www.camp3.com </a>
+                <p>1 month ago</p>
+              </span>
+            </div>
+        </div>
+        <div class="col-sm-2 py-5">
+          <h2 class="text-warning mb-4 fw-bold">CONTACT</h2>
+          <p class="d-flex gap-sm-2">
+            <span class="fs-2"><i class="fa-solid fa-phone"> </i> </span>
+            <span>
+              : 7817095043
+              <br />
+              : 7668301822
+            </span>
+          </p>
+          <p class="d-flex gap-sm-2">
+            <span class="fs-2"><i class="fa-solid fa-message"> </i> </span>
+            <span>
+              : 7817095043
+              <br />
+              : 7668301822
+            </span>
+          </p>
+          <p class="d-flex gap-sm-2">
+            <span class="fs-2"><i class="fa-solid fa-envelope"> </i> </span>
+            <span>
+              palyogesh508@gmail.com
+              <br />
+              theyogeshpal@gmail.com
+            </span>
+          </p>
+        </div>
+      </div>
+      <!-- footer close -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurture Nest Foundation</title>
+    <link rel="shortcut icon" href="./images/narture-nest-favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .nav-item {
+        transition: all 0.5s ease;
+        height: 8vmin;
+        border-radius: 10px;
+        margin: 2vmin 0vmin 0vmin 0vmin; 
+        
+      }
+      .hov:hover {
+        background-color: yellow;
+        color: white;
+      }
+      .caption-shadow {
+        filter: drop-shadow(5px 5px 2px rgb(0, 0, 0));
+        font-weight: bold;
+      }
+      .carousel-item a {
+      
+        padding: 1vmin 4vmin;
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+      }
+      .carousel-item h1 {
+        font-size: 3.2rem;
+      }
+
+      .services {
+        box-shadow: 2px 2px 10px black;
+        transition: all 0.5s ease;
+      }
+      .services:hover {
+        box-shadow: 4px 4px 5px black;
+        transform: translateY(-8px);
+      }
+      .logo {
+        width: 50%;
+      }
+
+      .load {
+        animation-name: load;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes load {
+        from {
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+          display: none;
+        }
+      }
+
+      .dis {
+        display: none;
+      }
+      @media (max-width:769px) {
+        .logo {
+          width: 150%;
+        }
+      }
+
+      
+
+     
+      
+      
+
+
+      
+
+     
+
+
+      
+
+
+    </style>
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="preloader" class="load-row row m-0 p-0">
+        <div class="col-sm-12 m-0 p-0">
+            <div class="bg-white d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="h-75 d-flex align-items-center">
+                  <img class="h-50" src="./images/d9f21515b1e38d83e94fdbce88f623b6 (1).gif" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+    <div id="main-content" class="container-fluid dis">
+      
+      <div class="row  bg-white text-dark border-bottom border-1 p-2">
+        <div class="col-sm-12 p-0 d-flex justify-content-center  fs-6">
+          <marquee class="h-100 m-0 p-0">"Empowering Communities, Building a Better Future."</marquee>
+        </div>
+      </div>
+      <!-- navbar start -->
+      <div class="row sticky-top bg-white d-flex justify-content-center">
+        <div class="col-sm-12 p-0 px-5">
+          <nav class="navbar  p-0 d-flex navbar-expand-lg navbar-light">
+            <a class="navbar-brand  w-50 m-0 p-0" href="#"
+              ><img class="logo" src="./images/nurture-nest-logo.png" height="100" alt=""
+            /></a>
+            <button
+              class="navbar-toggler "
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse p-0"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mx-auto m-0 gap-sm-5">
+                <li class="nav-item hov h-100 fs-5 fw-bold active">
+                  <a class="nav-link bg-warning rounded" href="./index.html">Home</a>
+                </li>
+                
+                <li class="nav-item hov h-100 fs-5 fw-bold active">
+                  <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item hov h-100 fs-5 fw-bold active">
+                  <a class="nav-link" href="./contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="fs-4 px-4 fw-bold btn btn-danger bg-danger" href="./donate.html"
+                    >Donate</a
+                  >
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- navbar end -->
+
+      <!-- Slider start -->
+      <div class="row">
+        <div class="col-sm-12 p-0">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators pb-3">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="3"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="./images/carousel-1.jpg"
+                  alt="First slide"
+                  height="650"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block"
+                  style="top: 10rem;"
+                >
+                  <h1 class="fw-bold mb-0 text-white" style="background: rgba(0, 0, 0, 0.4);">
+                    HELP CHILDREN TO GET EDUCATED
+                  </h1>
+                  <p class="fs-5" style="background: rgba(0, 0, 0, 0.4);">
+                    Help children to get education by paying <br>their Education expenses like books and School and other necessary goodies.
+                  </p>
+                  <a href="./donate.html" class="btn btn-warning">Donate Now</a>
+                </div>
+              </div>
+               <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="https://www.cry.org/wp-content/themes/cry/images/child-health-and-nutrition/ensure-nutrition-for-children.jpg"
+                  alt="Second slide"
+                  height="650"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block"
+                  style="top: 10rem;"
+                >
+                  <h1 class="fw-bold mb-0 text-white" style="background: rgba(0, 0, 0, 0.4);">
+                    FEEDING THE UNDERPRIVILAGED
+                  </h1>
+                  <p class="fs-5" style="background: rgba(0, 0, 0, 0.4);">
+                    Help underprivilaged to get food<br>
+                    And helping them to not sleep empty stomach. 
+                  </p>
+                  <a href="./donate.html" class="btn btn-warning">Donate Now</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./images/clothes-.jpg"
+                  alt="third slide"
+                  height="650"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block"
+                  style="top: 10rem;"
+                >
+                  <h1 class="fw-bold mb-0 text-white" style="background: rgba(0, 0, 0, 0.4);">
+                    Winter Wishes: Donate Warm Clothes & Blankets
+                  </h1>
+                  <p class="fs-5" style="background: rgba(0, 0, 0, 0.4);">
+                   We all know how cruel winters can be, so instead of hoarding clothes that don’t fit anymore <br> or those that you just stopped wearing, save someone’s life by donating them.
+                  </p>
+                  <a href="/donate.html" class="btn btn-warning">Donate Now</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./images/health.jpg"
+                  alt="forth slide"
+                  height="650"
+                />
+                <div
+                  class="carousel-caption d-none d-md-block"
+                  style="top: 10rem;"
+                >
+                  <h1 class="fw-bold mb-0 text-white" style="background: rgba(0, 0, 0, 0.4);">
+                    HEALTH CARE FOR ALL
+                  </h1>
+                  <p class="fs-5" style="background: rgba(0, 0, 0, 0.4);">
+                   Providing health care and medical services to the needy people <br> and the one's who can't afford.
+                  </p>
+                  <a href="./donate.html" class="btn btn-warning">Donate Now</a>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Slider close -->
+      <!-- our services div start -->
+      <div class="row">
+        <div class="col-sm-12 d-flex justify-content-center">
+          <span
+            class="position-relative bg-primary text-white p-2 px-5 fw-bold fs-4"
+            style="top: -1.5rem"
+            >Our Fields of Work</span
+          >
+        </div>
+      </div>
+      <!-- our services div end -->
+      <!-- feilds with icon-rounded start  -->
+      <div class="row py-5 d-flex justify-content-center">
+        <div class="col-sm-3 d-flex justify-content-center">
+          <div
+            class="card p-0 border-0 d-flex flex-column align-items-center bg-transparent"
+            style="width: 18rem"
+          >
+            <img
+              class="card-img-top services rounded-circle w-75"
+              src="./images/education-circle.webp"
+              alt="Card image cap"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Education & Child Development</h5>
+              <p class="card-text">
+                We provide free access to books, learning materials, and classes to ensure every child has the tools they need to succeed. By supporting young minds, we're helping to build a foundation for a lifetime of learning and opportunity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 d-flex justify-content-center">
+          <div
+            class="card p-0 border-0 d-flex flex-column align-items-center bg-transparent"
+            style="width: 18rem"
+          >
+            <img
+              class="card-img-top services rounded-circle w-75"
+              src="./images/food-circle.avif"
+              alt="Card image cap"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Food Security & Community Support</h5>
+              <p class="card-text">
+                Our food distribution initiatives are designed to combat hunger and provide nourishment to those in need. We work with our dedicated volunteers and partners to ensure every family has access to healthy and consistent meals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-0 d-flex justify-content-center">
+          <div
+            class="card border-0 d-flex flex-column align-items-center bg-transparent"
+            style="width: 18rem"
+          >
+            <img
+              class="card-img-top services rounded-circle w-75"
+              src="./images/CLOTH-CIRCLE.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Clothing & Essential Goods</h5>
+              <p class="card-text">
+                We collect and distribute clothing and essential items to individuals and families who are facing hardship. Your donations make a direct and immediate impact, providing comfort and dignity to those who need it most.
+
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 p-0 d-flex justify-content-center">
+          <div
+            class="card border-0 d-flex flex-column align-items-center bg-transparent"
+            style="width: 18rem"
+          >
+            <img
+              class="card-img-top services rounded-circle w-75"
+              src="./images/medical-circle.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Healthcare & Medication Support</h5>
+              <p class="card-text">
+                We believe that access to healthcare is a fundamental right. Our work in this sector focuses on providing free or affordable medication and healthcare support to vulnerable communities, ensuring that illness is not a barrier to a better life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- feilds with icon-rounded close  -->
+
+      <!-- portfolio section open -->
+      <div class="row bg-dark p-sm-5 py-sm-3 d-flex justify-content-around">
+        <div class="col-sm-10 my-5">
+          <div class="d-flex justify-content-between">
+            <h1 class="text-warning fw-bold">Our Gallery</h1>
+            
+          </div>
+        </div>
+
+        <div class="col-sm-3 px-2 py-sm-5 text-start">
+          <img
+            class="mb-sm-4 w-100"
+            src="./images/blog-1.jpg"
+            alt=""
+            style="border: 1rem solid white"
+          />
+          <h4 class="text-warning">
+            Postnatal Care to Postpartum Depression
+          </h4>
+          <p class="text-white">
+            Becoming a mother is a blissful experience. It is a moment of pure joy…
+          </p>
+        </div>
+        <div class="col-sm-3 p-0  px-2 py-5 text-start">
+          <img
+            class="mb-sm-4 w-100"
+            src="./images/lavanya.jpg"
+            alt=""
+            style="border: 1rem solid white"
+          />
+          <h4 class="text-warning">
+            lavanya
+
+          </h4>
+          <p class="text-white">
+            Some people say I am unlucky. My father went away when I was born, and later my mother died in an accident.
+          </p>
+        </div>
+        <div class="col-sm-3 p-0  px-2 py-5 text-start">
+          <img
+            class="mb-sm-4 w-100"
+            src="./images/blo-2.jpg"
+            alt=""
+            style="border: 1rem solid white"
+          />
+          <h4 class="text-warning">Bringing Smile on Chilren's Face</h4>
+          <p class="text-white">
+            Children felt very after receiving new books, geometry box and many other accesories.
+            The value of their smile is much more than anything else 
+          </p>
+        </div>
+      </div>
+      <!-- portfolio section close -->
+
+      <!-- offer opne -->
+      <div
+        class="row d-flex py-5 justify-content-center align-items-start "
+        style="border-bottom: 0.05rem solid grey"
+      >
+        <div class="col-sm-11 px-sm-5 text-center">
+          <h1 class="fw-bold text-primary mb-sm-4">WHAT WE DO</h1>
+          <p class="fs-5 text-secondary justify">
+            “At <b>Nurture Nest Foundation</b>, we are committed to uplifting the underprivileged by focusing on four essential needs of life — Education, Food, Clothing, and Healthcare. We provide learning opportunities for children, distribute free meals to the hungry, offer clothes to those in need, and deliver medical services to individuals who cannot afford them. Through these initiatives, we strive to bring dignity, hope, and a brighter future to every life we touch.”
+          </p>
+        </div>
+
+        <div
+          class="col-sm-3 px-4 justify-content-end d-flex flex-column align-items-end"
+        >
+          <h4 class="text-primary w-100 text-start fw-bold">Education for Every Child</h4>
+          <p style="text-align: justify">
+            “Knowledge is the foundation of growth. At <b>Nurture Nest Foundation</b>, we believe that every child deserves access to quality education, regardless of their background.”
+          </p>
+        </div>
+        <div
+          class="col-sm-3 px-4 justify-content-end d-flex flex-column align-items-end"
+        >
+          <h4 class="text-primary w-100 text-start fw-bold">
+            Clothing with Compassion
+          </h4>
+          <p style="text-align: justify">
+            “Clothing is more than just fabric—it provides comfort, dignity, and protection. At <b>Nurture Nest Foundation</b>, we collect and distribute clothes to underprivileged individuals and families who cannot afford them.”
+            
+          </p>
+        </div>
+        <div
+          class="col-sm-3 px-4 justify-content-end d-flex flex-column align-items-end"
+        >
+          <h4 class="text-primary w-100 text-start fw-bold">Nourishment for All</h4>
+          <p style="text-align: justify">
+            “Hunger is one of the harshest realities faced by millions. At <b>Nurture Nest Foundation</b>, we believe that no one should go to bed hungry. Through our food donation drives and community kitchens, we serve nutritious meals to those in need.”
+          </p>
+        </div>
+        <div
+          class="col-sm-3 px-4 justify-content-end d-flex flex-column align-items-end"
+        >
+          <h4 class="text-primary w-100 text-start fw-bold">Healthcare for Every Life</h4>
+          <p style="text-align: justify">
+            “Health is a basic right, not a privilege. At <b>Nurture Nest Foundation</b>, we provide free and affordable medical services to those who cannot afford treatment, ensuring that everyone gets access to proper healthcare.”
+          </p>
+        </div>
+      </div>
+      <!-- offer close -->
+
+      <!-- testimonials open -->
+      <div
+        class="row d-flex py-5 justify-content-center"
+        style="border-bottom: 0.2rem solid grey"
+      >
+        <div class="col-sm-11 px-sm-5 text-center">
+          <h1 class="fw-bold text-primary mb-sm-4">Stories of Hope & Impact</h1>
+          <p class="fs-3 text-dark justify" style="font-family: monospace">
+            “Here’s what our beneficiaries, volunteers, and supporters have to say about their experience with Nurture Nest Foundation.”
+          </p>
+        </div>
+
+        
+
+        <div
+          class="col-sm-12 d-flex justify-content-center"
+          >
+          <div
+            class="imgs d-flex row flex-wrap justify-content-center gap-sm-5">
+            <div class="d-flex col-sm-3 mb-4 flex-column align-items-center gap-2">
+
+              <img src="./images/anita-devi-nurture-nest.png" style="height: 15vmin;"  alt="" class="rounded-circle" />
+              <p class="w-100 " style="text-align: justify;">
+                Thanks to Nurture Nest Foundation, my children now have access to free books and classes. Their future feels brighter than ever.
+              </p>
+              <h5>— Anita Devi, Beneficiary</h5>
+            </div>
+            <div class="d-flex flex-column col-sm-3 mb-4 align-items-center gap-2">
+
+              <img src="./images/rahul-sharma-nurture-nest.png" style="height: 15vmin;"  alt="" class="rounded-circle" />
+              <p class="w-100 " style="text-align: justify;">
+                Distributing food with the team was a heartwarming experience. It feels great to contribute to such a meaningful cause.             </p>
+              <h5>— Rahul Sharma, Volunteer</h5>
+            </div>
+            <div class="d-flex flex-column col-sm-3 mb-4 align-items-center gap-2">
+
+              <img src="./images/neha-nurture-nest.png" style="height: 15vmin;"  alt="" class="rounded-circle" />
+              <p class="w-100" style="text-align: justify;">
+                I donated clothes and was amazed to see how quickly they reached those in need. Truly inspiring work!
+              </p>
+              <h5>— Neha Gupta, Donor</h5>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- testimonials close -->
+
+      <!-- footer open -->
+ <div class="row bg-dark overflow-hidden  gap-3 text-white d-flex justify-content-center">
+        <div class="col-sm-3 py-5">
+          <h2 class="text-warning mb-4 fw-bold">DONATION</h2>
+          <p class="m-0 fw-bold">Education & Child Development</p>
+          <p>Help a child build a brighter future through education.</p>
+          <a href="./donate.html" class=" text-decoration-none">Donate Now</a>
+          <hr />
+
+          <p class="m-0">Clothing & Essential Goods</p>
+          <p>Your contributions provide comfort and dignity to those in need.</p>
+          <a href="./donate.html" class=" text-decoration-none">Donate Now</a>
+          <hr />
+
+          <p class="m-0">Food Security & Community Support</p>
+          <p>Help us ensure no one in our community goes hungry.</p>
+          <a href="./donate.html" class=" text-decoration-none">Donate Now </a>
+        </div>
+        <div class="col-sm-3 py-5">
+          <h2 class="text-warning mb-4 fw-bold">NEWSLETTER</h2>
+          <p class="m-0">Stay updated on our latest initiatives, success stories, and upcoming events. Subscribe to our newsletter to see your impact and learn how you can get more involved with the Nurture Nest Foundation.
+          </p>
+         
+          <hr class="m-1 p-0"/>
+          
+          
+          <input type="text" name="" id="" class="form-control my-3" placeholder="Subscribe To Our Newsletter">
+          <p class="w-100 d-flex justify-content-end">
+
+              <a href="#" class="btn btn-primary text-white">SUBSCRIBE</a>
+          </p>
+        </div>
+        <div class="col-sm-3 py-5">
+          <h2 class="text-warning mb-4 fw-bold">RECENT CAMP</h2>
+            <div class="d-flex gap-sm-2">
+
+                <img src="./images/camp-img.avif" style="height: 10vmin; width: 10vmin;" alt="">   
+              <span>
+                <p class="m-0">Community Health Clinic</p>
+                <a href="#" class="text-decoration-none">www.camp1.com </a>
+                <p>2 weeks ago</p>
+              </span>
+            </div>
+         
+          <hr />
+          <div class="d-flex gap-sm-2">
+
+                <img src="./images/camp-img.avif" style="height: 10vmin; width: 10vmin;" alt="">   
+              <span>
+                <p class="m-0">Book Distribution Drive</p>
+                <a href="#" class="text-decoration-none">www.camp2.com </a>
+                <p>5 weeks ago</p>
+              </span>
+            </div>
+          <hr />
+           <div class="d-flex gap-sm-2">
+
+                <img src="./images/camp-img.avif" style="height: 10vmin; width: 10vmin;" alt="">   
+              <span>
+                <p class="m-0">Winter Clothing Drive
+</p>
+                <a href="#" class="text-decoration-none">www.camp3.com </a>
+                <p>1 month ago</p>
+              </span>
+            </div>
+        </div>
+        <div class="col-sm-2 py-5">
+          <h2 class="text-warning mb-4 fw-bold">CONTACT</h2>
+          <p class="d-flex gap-sm-2">
+            <span class="fs-2"><i class="fa-solid fa-phone"> </i> </span>
+            <span>
+              : 7817095043
+              <br />
+              : 7668301822
+            </span>
+          </p>
+          <p class="d-flex gap-sm-2">
+            <span class="fs-2"><i class="fa-solid fa-message"> </i> </span>
+            <span>
+              : 7817095043
+              <br />
+              : 7668301822
+            </span>
+          </p>
+          <p class="d-flex gap-sm-2">
+            <span class="fs-2"><i class="fa-solid fa-envelope"> </i> </span>
+            <span>
+              palyogesh508@gmail.com
+              <br />
+              theyogeshpal@gmail.com
+            </span>
+          </p>
+        </div>
+      </div>
+      <!-- footer close -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script>
+      setTimeout(function() {
+        document.getElementById('preloader').classList.add("dis");
+        document.getElementById('main-content').classList.remove("dis");
+
+      },3000);
+    </script>
+
+
+  </body>
+</html>
